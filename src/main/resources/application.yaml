@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: 'AutoCatalog Server'
+  datasource:
+    url: jdbc:postgresql://${AC_DB_HOST}:${AC_DB_PORT}/${AC_DB_NAME}
+    username: ${AC_DB_USER}
+    password: ${AC_DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: validate

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+	<include resource="org/springframework/boot/logging/logback/defaults.xml" />
+	<appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+<!--			<pattern>${CONSOLE_LOG_PATTERN:-%clr(%d{${LOG_DATEFORMAT_PATTERN:-yyyy-MM-dd HH:mm:ss.SSS}}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}) %clr(${PID:- }){magenta} %clr(-&#45;&#45;){faint} %clr(%L){magenta} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}}</pattern>-->
+			<pattern>%clr(%d{HH:mm:ss.SSS}){faint} %clr(%-5p) %clr(${PID}){faint} %clr(---){faint} %clr([%8.20t]){cyan} %clr(%-40.40logger{39}){cyan} %clr(:){yellow} %clr(%-3.4line){yellow} %clr(:){yellow} %clr(%m){faint}%n</pattern>
+		</encoder>
+	</appender>
+	<root>
+		<appender-ref ref="CONSOLE" />
+	</root>
+	<logger name="org.springframework" level="INFO" />
+	<logger name="org.hibernate" level="INFO" />
+	<logger name="com.zaxxer.hikari" level="INFO" />
+	<logger name="org.flywaydb" level="INFO" />
+	<logger name="org.testcontainers" level="INFO" />
+	<logger name="com.github.dockerjava" level="INFO" />
+</configuration>
