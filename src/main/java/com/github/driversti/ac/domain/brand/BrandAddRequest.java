@@ -15,6 +15,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@DatesOrder(start = "founded", end = "defunct", message = "The founded date must be before the defunct date")
 class BrandAddRequest {
 
   @NotEmpty(message = "Brand name cannot be empty")

@@ -9,7 +9,7 @@ class BrandFactory {
 
   Brand fromAddRequest(BrandAddRequest addRequest) {
     return Brand.builder()
-        .name(addRequest.getName())
+        .name(addRequest.getName().trim())
         .founded(addRequest.getFounded())
         .defunct(addRequest.getDefunct())
         .build();

@@ -1,0 +1,17 @@
+POST http://localhost:8080/brand/add
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "BMW",
+  "founded": "1900-12-12"
+}
+
+###
+
+GET http://localhost:8080/brand/overview
+Accept: application/json
+Content-Type: application/json
+
+###
+

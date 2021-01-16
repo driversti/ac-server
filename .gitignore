@@ -30,3 +30,6 @@ build/
 ### VS Code ###
 .vscode/
 /postgres-data/
+
+### macOS ###
+**/.DS_Store

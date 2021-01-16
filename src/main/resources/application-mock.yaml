@@ -1,11 +1,14 @@
 spring:
+  config:
+    activate:
+      on-profile: mock
   datasource:
     url: jdbc:tc:postgresql:9.6.8:///databasename
+    username: postgres
+    password: mysecretpassword
     driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
   jpa:
     hibernate:
       ddl-auto: create-drop
-  config:
-    activate:
-      on-profile: test
+    show-sql: true
 
