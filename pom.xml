@@ -21,7 +21,7 @@
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.build.timestamp.format>yyyyMMdd'T'HHmmss'Z'</maven.build.timestamp.format>
     <spock.version>2.0-M4-groovy-3.0</spock.version>
-    <groovy.version>3.0.4</groovy.version>
+    <groovy.version>3.0.7</groovy.version>
     <gmaven.version>1.12.1</gmaven.version>
     <junit-jupiter.version>5.6.0</junit-jupiter.version>
     <maven-failsafe-plugin.version>2.22.2</maven-failsafe-plugin.version>
